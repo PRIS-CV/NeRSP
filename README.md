@@ -28,4 +28,4 @@
 <div align="center">
 </div>
 
-## We will release our work recently.
+## We will release our work soon.
