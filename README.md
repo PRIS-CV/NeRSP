@@ -1,6 +1,6 @@
 <h2 align="center">NeRSP: Neural 3D Reconstruction for Reflective Objects with Sparse Polarized Images</h2>
 <h4 align="center">
-    <strong>Yufei Han</strong></a>
+    <a href="https://yu-fei-han.github.io/homepage/"><strong>Yufei Han</strong></a>
     ·
     <a href="https://gh-home.github.io/"><strong>Heng Guo</strong></a>
     ·
