@@ -14,7 +14,7 @@
     ·
     <a href="https://zhanyuma.cn/"><strong>Zhanyu Ma</strong></a>
     ·
-    <strong>Yunpeng Jia</strong></a>
+    <a href="https://sdmda.bupt.edu.cn/info/1061/1060.htm"><strong>Yunpeng Jia</strong></a>
 </h3>
 <h4 align="center"><a href="https://cvpr.thecvf.com/Conferences/2024">CVPR 2024 </a></h3>
 <p align="center">
