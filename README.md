@@ -97,10 +97,11 @@ Our implementation is built from [NeuS](https://github.com/Totoro97/NeuS), [IDR]
 
 # Bibtex
 ```
-@inproceedings{nersp2024yufei,
-title = {NeRSP: Neural 3D Reconstruction for Reflective Objects with Sparse Polarized Images},
-author = {Yufei, Han and Heng, Guo and Koki, Fukai and Hiroaki, Santo and Boxin, Shi and Fumio, Okura and Zhanyu, Ma and Yunpeng, Jia},
-year = {2024},
-booktitle = CVPR,
+@InProceedings{Han_2024_CVPR,
+    author = {Han, Yufei and Guo, Heng and Fukai, Koki and Santo, Hiroaki and Shi, Boxin and Okura, Fumio and Ma, Zhanyu and Jia, Yunpeng},
+    title = {NeRSP: Neural 3D Reconstruction for Reflective Objects with Sparse Polarized Images},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year = {2024},
+    pages = {11821-11830}
 }
 ```
