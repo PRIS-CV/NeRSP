@@ -39,7 +39,7 @@ git clone https://github.com/PRIS-CV/NeRSP.git
 ```
 
 # Dataset
-We release the synthetic dataset **SMVP3D** and the real-wolrd dataset **RMVP3D**. All dataset is devided in original part and test part (6 views only). If you just want to train the results, pelase download the **test part**.
+We release the synthetic dataset **SMVP3D** and the real-wolrd dataset **RMVP3D**. All dataset is devided in original part and test part (6 views only). If you just want to train the results, pelase download the **test part** and put the case (object) folder under the new folder```./dataset```.
 
 <details><summary> SMVP3D </summary>
 
