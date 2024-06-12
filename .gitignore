@@ -1,0 +1,16 @@
+exp/
+public_data/
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+.idea/
+models/__pycache__/
+*.pyc
+*.pyc
+temp/
+tempmesh/
+
+__MACOSX/
+dataset/

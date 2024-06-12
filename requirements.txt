@@ -1,0 +1,16 @@
+tensorboardX
+numpy
+open3d==0.16.0
+pymcubes
+plyfile
+h5py
+transforms3d
+tqdm
+opencv-python
+pyyaml
+ninja
+tensorboard
+icecream
+trimesh
+pyhocon==0.3.59
+scikit-image==0.19.3
