@@ -19,7 +19,7 @@
 <h4 align="center"><a href="https://cvpr.thecvf.com/Conferences/2024">CVPR 2024 </a></h3>
 <p align="center">
   <br>
-    <a href="https://github.com/PRIS-CV/NeRSP">
+    <a href="https://arxiv.org/abs/2406.07111">
       <img src='https://img.shields.io/badge/arXiv-Paper-981E32?style=for-the-badge&Color=B31B1B' alt='arXiv PDF'>
     </a>
     <a href='https://yu-fei-han.github.io/NeRSP-project/'>
