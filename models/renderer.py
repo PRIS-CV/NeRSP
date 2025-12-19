@@ -264,7 +264,7 @@ class NeuSRenderer:
 
         pts = pts.reshape(-1, 3)
         dirs = dirs.reshape(-1, 3)
-        refine = self.mvas_net(pts,object_mask,idx,sdf_network,device,dataset,training)
+        refine = self.mvas_net(rays_d, rays_o, object_mask, idx, sdf_network, device, dataset, training)
         sdf_nn_output = sdf_network(pts)
         sdf = sdf_nn_output[:, :1]
         feature_vector = sdf_nn_output[:, 1:]
@@ -359,13 +359,20 @@ class NeuSRenderer:
             'surface_normal': refine['surface_normal'],
         }
     
-    def mvas_net(self,pts,mask,idx,sdf_network,device,dataset,training):
+    def mvas_net(self,ray_d,ray_o,mask,idx,sdf_network,device,dataset,training):
         if training:
-            points, object_mask, idx = pts, mask, idx
-            num_pixels, _ = pts.shape
+            view_directions, camera_centers, object_mask, idx = ray_d, ray_o, mask, idx
+            num_pixels, _ = view_directions.shape
+            with torch.no_grad():
+                points, network_object_mask, dists = self.ray_tracer(sdf=lambda x: sdf_network(x)[..., 0],
+                                                                    cam_loc=camera_centers,
+                                                                    object_mask=object_mask,
+                                                                    ray_directions=view_directions)
+
+            points = camera_centers + dists.reshape(num_pixels,
+                                                    1) * view_directions  # non differentiable w.r.t. network parameters
             
-            surface_mask = object_mask[...,None].repeat(1,128).reshape(-1)
-            idx = idx[...,None].repeat(1,128).reshape(-1)
+            surface_mask = network_object_mask & object_mask  # has intersection and within mask
             sdf_output= self.sdf_network(points)[...,:1]
             
             eik_bounding_box = 1
